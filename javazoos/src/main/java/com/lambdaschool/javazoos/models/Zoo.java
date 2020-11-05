@@ -21,9 +21,10 @@ public class Zoo {
     public Zoo() {
     }
 
-    public Zoo(long zooid, String zooname) {
+    public Zoo(long zooid, String zooname, List<Telephone> telephones) {
         this.zooid = zooid;
         this.zooname = zooname;
+        this.telephones = telephones;
     }
 
     public long getZooid() {
@@ -40,5 +41,13 @@ public class Zoo {
 
     public void setZooname(String zooname) {
         this.zooname = zooname;
+    }
+
+    public List<Telephone> getTelephones() {
+        return telephones;
+    }
+
+    public void setTelephones(List<Telephone> telephones) {
+        this.telephones = telephones;
     }
 }
