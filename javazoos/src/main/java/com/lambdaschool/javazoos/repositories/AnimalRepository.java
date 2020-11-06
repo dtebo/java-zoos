@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AnimalRepository extends CrudRepository<Animal, Long> {
-    Animal findByNameIgnoringCase(String name);
+    Animal findByTypeIgnoringCase(String type);
 
     @Modifying
     @Query(value = "UPDATE animals SET animaltype = :type, lastmodifiedby = :uname, lastmodifieddate = CURRENT_TIMESTAMP" +
